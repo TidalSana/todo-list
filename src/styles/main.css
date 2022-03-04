@@ -1,0 +1,193 @@
+/* whole container */
+.inbox-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+/* title */
+#inbox {
+    margin-bottom: 10px;
+    color: #1F1B26;
+    font-size: 2em; 
+    font-family: 'Libre Franklin';
+    font-style: Bold;
+    font-weight: 500;
+}
+
+.project-sub-head {
+    margin-bottom: 10px;
+    color: #1F1B26;
+    font-size: 2em; 
+    font-family: 'Libre Franklin';
+    font-style: Bold;
+    font-weight: 500;
+}
+
+/*  button to open option to add tasks */
+#date-picker {
+    margin: 10px;
+    border-color: #1F1B26;
+    background-color: transparent;
+    color: #1F1B26;
+    box-shadow: 0px 10px 20px -6px rgb(0 0 0 / 12%);
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+#date-picker:hover {
+    cursor: pointer;
+    border:solid 2px #1F1B26;
+    background: #1F1B26;
+    color: #fff;
+}
+.task-add {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Cantarell-Regular';
+    font-size: 20px;
+}
+.task-add {
+    border-color: #1F1B26;
+    background-color: transparent;
+    color: #1F1B26;
+    box-shadow: 0px 10px 20px -6px rgb(0 0 0 / 12%);
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+    width: 500px;
+}
+.task-add:hover {
+    cursor: pointer;
+    border:solid 2px #1F1B26;
+    background: #1F1B26;
+    color: #fff;
+}
+
+/* hides any element that has this class */
+.close {
+    display: none;
+}
+
+/* actual task list */
+.task-list-holder {
+    display: flex;
+    font-family: 'MuktaVaani-Light';
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+/* task list items */
+.task-items {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #1F1B26;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px -6px rgb(0 0 0 / 12%);
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+.task-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    cursor: default;
+}
+.task-items:hover {
+    cursor: pointer;
+    background: #1F1B26;
+    color: #fff;
+}
+/* items inside of each task */
+.task-name {
+    margin-right: auto;
+}
+.date-picker-div {
+    margin-left: auto;
+}
+.delete-button {
+    display: flex;
+    align-items: center; 
+    box-sizing: border-box;
+    border:none;
+    background: none;
+    margin: 5px;
+    width: 10px;
+    margin-left: auto;
+}
+.delete-button:hover {
+    cursor: pointer;
+}
+.far {
+    font-weight: 400;
+    color: #1F1B26;
+}
+
+/* hidden container below the list*/
+.add-container-div {
+    width: 500px;
+    margin-top: 50px;
+    text-align: center;
+}
+/* input section in hidden container*/
+#input-add-task {
+    color: #1F1B26;
+    width: 80%;
+    margin: 10px;
+    font-size: 1.3rem;
+    border: 0;
+    border-bottom: 2px solid;
+    outline: 0;
+}
+/* hidden div that shows */
+.active {
+    display: block;
+    width: 100%; 
+    padding: 10px;
+    text-align: center;
+}
+/* buttons div below input section*/
+.button-container-tasks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.buttons-tasks-add {
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 11px 16px;
+    width: 100px;
+}
+.buttons-tasks-add {
+    border-color: #1F1B26;
+    background-color: transparent;
+    color: #1F1B26;
+    box-shadow: 0px 10px 20px -6px rgb(0 0 0 / 12%);
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+.buttons-tasks-add:hover {
+    cursor: pointer;
+    border:solid 2px #1F1B26;
+    background: #1F1B26;
+    color: #fff;
+}

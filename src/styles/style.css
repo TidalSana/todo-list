@@ -1,0 +1,187 @@
+/* fonts */
+@font-face {
+    font-family: 'Cantarell-Regular';
+    src: url('../fonts/Cantarell-Regular.ttf');
+}
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('../fonts/LibreFranklin-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'MuktaVaani-Light';
+    src: url('../fonts/MuktaVaani-Light.ttf');
+}
+
+
+#content {
+    display: grid; 
+    grid-template-columns: 0.3fr 1.5fr; 
+    grid-template-rows: 5rem 1.7fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "header header"
+        "side-bar content"; 
+    overflow: hidden;
+}
+#content {
+    height: 100vh;
+    width: 100vw;
+}
+.header {
+    grid-area: header;
+    background-color: #1F1B26;
+    display: flex; 
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header > h1 {
+    padding-left: 30px;
+    font-family: 'Libre Franklin';
+    font-style: initial;
+    font-size: 30px;
+    color:#F5F4F4;
+}
+.side-bar {
+    background-color: rgb(226, 226, 226);
+    grid-area: side-bar;
+    padding: 10px;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.default-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+.default-title {
+    color: #1F1B26;
+    font-size: 2em; 
+    font-family: 'Libre Franklin';
+    font-style: oblique;
+    font-weight: 500;
+}
+.default-buttons {
+    font-family: 'Cantarell-Regular';
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 15px;
+    width: 90%;
+    border: none;
+    background: none;
+    color: #1F1B26;
+}
+.default-buttons:hover {
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    background: transparent;
+    background-color: #1F1B26;
+}
+.fa-house {
+    margin-right: 5px;
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 5px;
+}
+.projects-title {
+    color: #1F1B26;
+    font-size: 2em; 
+    font-family: 'Libre Franklin';
+    font-style: oblique;
+    font-weight: 500;
+}
+.project-button {
+    font-family: 'Cantarell-Regular';
+    font-size: 20px;
+    border-radius: 5px;
+    width: 90%;
+    margin: 15px;
+    border: none;
+    background: none;
+    color: #1F1B26;
+}
+.project-button:hover {
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    background: transparent;
+    background-color: #1F1B26;
+}
+.project-add-div {
+    width: 90%;
+    margin-top: 10px;
+    text-align: center; 
+}
+#project-add-task {
+    color: #1F1B26;
+    background: none;
+    width: 80%;
+    margin: 10px;
+    font-size: 1.3rem;
+    border: 0;
+    border-bottom: 2px solid;
+    outline: 0;
+}
+.project-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.project-button-bar {
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 11px 16px;
+    width: 100px;
+}
+.project-button-bar {
+    border-color: #1F1B26;
+    background-color: transparent;
+    color: #1F1B26;
+    box-shadow: 0px 10px 20px -6px rgb(0 0 0 / 12%);
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+.project-button-bar:hover {
+    cursor: pointer;
+    border:solid 2px #1F1B26;
+    background: #1F1B26;
+    color: #fff;
+}
+.project-items {
+    font-family: 'Cantarell-Regular';
+    font-size: 20px;
+    border-radius: 5px;
+    width: 90%;
+    margin: 15px;
+    border: none;
+    background: none;
+    color: #1F1B26;
+}
+.project-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 5px;
+    padding: 10px;
+    cursor: default;
+}
+.project-items:hover {
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    background: transparent;
+    background-color: #1F1B26;
+}
